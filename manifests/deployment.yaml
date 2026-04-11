@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: guestbook-ui
+  name: simple-web
 spec:
   replicas: 1
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: guestbook-ui
+      app: simple-web
   template:
     metadata:
       labels:
-        app: guestbook-ui
+        app: simple-web
     spec:
       containers:
-        - name: guestbook-ui
-          image: ghcr.io/<YOUR_USER>/simple-web:a
+        - name: simple-web
+          image: ghcr.io/matteociaroni/simple-web:a
           ports:
             - containerPort: 8080
