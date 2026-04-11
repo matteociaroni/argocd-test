@@ -31,6 +31,6 @@ jobs:
         with:
           context: ./image
           push: true
-          tags: ghcr.io/matteociaroni/sample-web:a
+          tags: ghcr.io/matteociaroni/sample-web:b
           cache-from: type=gha
           cache-to: type=gha,mode=max
