@@ -4,7 +4,6 @@ metadata:
   name: simple-web
 spec:
   replicas: 1
-  revisionHistoryLimit: 3
   selector:
     matchLabels:
       app: simple-web
