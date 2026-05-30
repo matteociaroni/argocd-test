@@ -14,4 +14,4 @@ jobs:
 
       - name: Deploy
         run: |
-          kubectl apply -f manifests/
+          sudo kubectl apply -f manifests/
