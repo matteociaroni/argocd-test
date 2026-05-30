@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: simple-web
-          image: ghcr.io/matteociaroni/sample-web:b
+          image: ghcr.io/matteociaroni/sample-web:a
           ports:
             - containerPort: 8080
